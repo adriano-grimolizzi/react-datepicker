@@ -11,17 +11,11 @@ class Datepicker extends Component {
         this.state = {
             startDate: new Date()
         };
-        this.handleChange = this.handleChange.bind(this);
-        this.onFormSubmit = this.onFormSubmit.bind(this);
     }
 
-    handleChange(date) {
-        this.setState({
-            startDate: date
-        })
-    }
+    handleChange = (date) => this.setState({ startDate: date })
 
-    onFormSubmit(e) {
+    onFormSubmit = (e) => {
         e.preventDefault();
         console.log(this.state.startDate)
     }
