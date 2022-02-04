@@ -1,14 +1,15 @@
 import './App.css'
 import React from 'react'
 import Welcome from './components/Welcome'
-import { Counter } from './feature/counter/counter'
+import FilterableProductTable from './components/product-table/FilterableProductTable'
 
 const App = () =>
   <div className="App">
     <header className="App-header">
       <Welcome name="Adriano" />
-      <Counter />
+      <FilterableProductTable />
+
     </header>
   </div>
 
-export default App;
+export default App
