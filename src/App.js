@@ -1,12 +1,12 @@
 import './App.css'
 import React from 'react'
 import Welcome from './components/Welcome'
-import FilterableProductTable from './components/product-table/FilterableProductTable'
+import FilterableProductTable from './components/product-table-interactive/FilterableProductTable'
 
 const App = () =>
   <div className="App">
     <header className="App-header">
-      <Welcome name="Adriano" />
+      {/* <Welcome name="Adriano" /> */}
       <FilterableProductTable />
 
     </header>
