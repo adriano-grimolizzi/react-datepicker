@@ -1,0 +1,48 @@
+.form-group {
+  display: flex;
+}
+
+.react-datepicker-wrapper {
+  margin-right: 4px;
+}
+
+form {
+  margin-left: 3.4rem;
+  margin-top: 1rem;
+}
+
+input,
+.btn.btn-primary {
+  border: 2px solid #3e3c41;
+  border-radius: 5px;
+}
+
+input {
+  color: #6b6a68;
+  background-color: #1a1c25;
+  border-color: #3e3c41;
+}
+
+.btn.btn-primary {
+  font-weight: bold;
+  color: #07b46d;
+  background-color: #272a37;
+}
+
+.btn.btn-primary:active,
+.btn.btn-primary:focus,
+.btn.btn-primary:hover {
+  font-weight: bold;
+  color: white;
+  background-color: #07b46d;
+}
+
+.react-datepicker__month-container {
+  color: #fee7d6;
+  background-color: #272a37;
+}
+
+.react-datepicker__header {
+  color: #fee7d6;
+  background-color: #272a37;
+}

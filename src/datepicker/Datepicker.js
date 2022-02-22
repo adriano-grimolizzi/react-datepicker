@@ -4,6 +4,8 @@ import DatePicker from 'react-datepicker'
 import "react-datepicker/dist/react-datepicker.css"
 import 'bootstrap/dist/css/bootstrap.min.css'
 
+import './datepicker.css'
+
 class Datepicker extends Component {
 
     constructor(props) {
@@ -20,21 +22,19 @@ class Datepicker extends Component {
         console.log(this.state.startDate)
     }
 
-    render() {
-        return (
-            <form onSubmit={this.onFormSubmit}>
-                <div className="form-group">
-                    <DatePicker
-                        selected={this.state.startDate}
-                        onChange={this.handleChange}
-                        name="startDate"
-                        dateFormat="dd/MM/yyyy"
-                    />
-                    <button className="btn btn-primary">Show Date</button>
-                </div>
-            </form>
-        );
-    }
+    render = () =>
+        <form onSubmit={this.onFormSubmit}>
+            <div className="form-group">
+                <DatePicker
+                    className='custom-datepicker'
+                    selected={this.state.startDate}
+                    onChange={this.handleChange}
+                    name="startDate"
+                    dateFormat="dd/MM/yyyy" />
+                <button className="btn btn-primary">Select</button>
+            </div>
+        </form>
+
 }
 
 export default Datepicker

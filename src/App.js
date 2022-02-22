@@ -2,14 +2,11 @@ import './App.css'
 import React from 'react'
 import Welcome from './components/Welcome'
 import FilterableProductTable from './components/product-table-interactive/FilterableProductTable'
+import Datepicker from './datepicker/Datepicker'
 
-const App = () =>
+export default () =>
   <div className="App">
     <header className="App-header">
-      {/* <Welcome name="Adriano" /> */}
-      <FilterableProductTable />
-
+      <Datepicker />
     </header>
   </div>
-
-export default App
